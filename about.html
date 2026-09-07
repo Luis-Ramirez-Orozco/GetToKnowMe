@@ -27,11 +27,125 @@
     <p class="mt-4 text-lg text-[#1d1d1f]/80">
       This is where your fuller story goes &mdash; your background, what got you into mechanical engineering, the kind of problems you like solving, and anything else you want visitors to know beyond the project list. Replace this paragraph with your own words.
     </p>
-    <div class="mt-8">
-      <a href="index.html" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
-    </div>
   </div>
 </section>
+
+<!-- TIMELINE -->
+<section class="bg-white pb-20 px-8 md:px-16 overflow-hidden">
+  <h2 class="text-4xl font-semibold tracking-tight text-center">My Timeline.</h2>
+
+  <div id="timeline-track" class="relative mt-16 max-w-3xl mx-auto">
+    <!-- base line -->
+    <div class="absolute left-2 md:left-1/2 top-0 bottom-0 w-[2px] bg-[#d2d2d7] md:-translate-x-1/2"></div>
+    <!-- fill line, height driven by scroll position -->
+    <div id="timeline-fill" class="absolute left-2 md:left-1/2 top-0 w-[2px] bg-[#0071e3] md:-translate-x-1/2" style="height:0%"></div>
+
+    <!-- item -->
+    <div class="timeline-item relative mb-16 pl-10 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
+      <span class="absolute left-2 md:left-1/2 top-1 w-4 h-4 -translate-x-1/2 rounded-full bg-[#0071e3] ring-4 ring-white"></span>
+      <div class="md:col-start-1 md:text-right md:pr-10">
+        <p class="text-sm font-semibold text-[#0071e3]">Chapter 1</p>
+        <h3 class="mt-1 text-xl font-semibold">Where it started</h3>
+        <p class="mt-2 text-[#1d1d1f]/80">This is where your story begins &mdash; what first got you curious about how things work. Replace this with your own words.</p>
+      </div>
+    </div>
+
+    <!-- item -->
+    <div class="timeline-item relative mb-16 pl-10 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
+      <span class="absolute left-2 md:left-1/2 top-1 w-4 h-4 -translate-x-1/2 rounded-full bg-[#0071e3] ring-4 ring-white"></span>
+      <div class="md:col-start-2 md:pl-10">
+        <p class="text-sm font-semibold text-[#0071e3]">2024</p>
+        <h3 class="mt-1 text-xl font-semibold">Mechanical Engineering, B.S.</h3>
+        <p class="mt-2 text-[#1d1d1f]/80">Graduated from California State University, Los Angeles with a degree in Mechanical Engineering.</p>
+      </div>
+    </div>
+
+    <!-- item -->
+    <div class="timeline-item relative mb-16 pl-10 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
+      <span class="absolute left-2 md:left-1/2 top-1 w-4 h-4 -translate-x-1/2 rounded-full bg-[#0071e3] ring-4 ring-white"></span>
+      <div class="md:col-start-1 md:text-right md:pr-10">
+        <p class="text-sm font-semibold text-[#0071e3]">2024</p>
+        <h3 class="mt-1 text-xl font-semibold">EIT Certified</h3>
+        <p class="mt-2 text-[#1d1d1f]/80">Passed the FE Examination and became an Engineer in Training, EIT #184349.</p>
+      </div>
+    </div>
+
+    <!-- item -->
+    <div class="timeline-item relative mb-16 pl-10 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
+      <span class="absolute left-2 md:left-1/2 top-1 w-4 h-4 -translate-x-1/2 rounded-full bg-[#0071e3] ring-4 ring-white"></span>
+      <div class="md:col-start-2 md:pl-10">
+        <p class="text-sm font-semibold text-[#0071e3]">2024 &ndash; Present</p>
+        <h3 class="mt-1 text-xl font-semibold">Building &amp; Designing</h3>
+        <p class="mt-2 text-[#1d1d1f]/80">Designed and machined hands-on projects like the Pool Table and Fidget Clicker.</p>
+      </div>
+    </div>
+
+    <!-- item -->
+    <div class="timeline-item relative pl-10 md:pl-0 md:grid md:grid-cols-2 md:gap-10">
+      <span class="absolute left-2 md:left-1/2 top-1 w-4 h-4 -translate-x-1/2 rounded-full bg-[#0071e3] ring-4 ring-white"></span>
+      <div class="md:col-start-1 md:text-right md:pr-10">
+        <p class="text-sm font-semibold text-[#0071e3]">Today</p>
+        <h3 class="mt-1 text-xl font-semibold">What's next</h3>
+        <p class="mt-2 text-[#1d1d1f]/80">Replace this with where you're headed next &mdash; the problems you want to tackle going forward.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-16 text-center">
+    <a href="index.html" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.timeline-item');
+    var track = document.getElementById('timeline-track');
+    var fill = document.getElementById('timeline-fill');
+
+    items.forEach(function (item) {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(16px)';
+      item.style.transition = 'opacity .6s ease, transform .6s ease';
+    });
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      items.forEach(function (item) { observer.observe(item); });
+    } else {
+      items.forEach(function (item) {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+      });
+    }
+
+    var ticking = false;
+    function updateFill() {
+      var rect = track.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var progress = (vh - rect.top) / (rect.height + vh);
+      progress = Math.max(0, Math.min(1, progress));
+      fill.style.height = (progress * 100) + '%';
+      ticking = false;
+    }
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(updateFill);
+        ticking = true;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    updateFill();
+  })();
+</script>
 
 </body>
 </html>
