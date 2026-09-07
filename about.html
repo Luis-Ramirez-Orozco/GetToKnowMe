@@ -126,13 +126,37 @@
       });
     }
 
+    var dots = track.querySelectorAll('.timeline-item > span');
+    var targetFraction = 0.9;
+
+    function offsetWithin(el, ancestor) {
+      var top = 0;
+      while (el && el !== ancestor) {
+        top += el.offsetTop;
+        el = el.offsetParent;
+      }
+      return top;
+    }
+
+    function computeTargetFraction() {
+      if (dots.length < 2 || !track.offsetHeight) return;
+      var secondLastDotTop = offsetWithin(dots[dots.length - 2], track);
+      var lastDotTop = offsetWithin(dots[dots.length - 1], track);
+      var targetY = secondLastDotTop + (lastDotTop - secondLastDotTop) * 0.35;
+      targetFraction = targetY / track.offsetHeight;
+    }
+
     var ticking = false;
     function updateFill() {
-      var rect = track.getBoundingClientRect();
+      var scrollY = window.scrollY || document.documentElement.scrollTop;
       var vh = window.innerHeight;
-      var progress = (vh - rect.top) / (rect.height + vh);
-      progress = Math.max(0, Math.min(1, progress));
-      fill.style.height = (progress * 100) + '%';
+      var trackTopAbs = track.getBoundingClientRect().top + scrollY;
+      var maxScroll = document.documentElement.scrollHeight - vh;
+      var startScroll = trackTopAbs - vh;
+      var endScroll = Math.max(maxScroll, startScroll + 1);
+      var rawProgress = (scrollY - startScroll) / (endScroll - startScroll);
+      rawProgress = Math.max(0, Math.min(1, rawProgress));
+      fill.style.height = (rawProgress * targetFraction * 100) + '%';
       ticking = false;
     }
     function onScroll() {
@@ -141,8 +165,13 @@
         ticking = true;
       }
     }
+    function onResize() {
+      computeTargetFraction();
+      updateFill();
+    }
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
+    window.addEventListener('resize', onResize);
+    computeTargetFraction();
     updateFill();
   })();
 </script>
