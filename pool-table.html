@@ -7,59 +7,85 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif; }
-  .hero-bg {
-    background: radial-gradient(ellipse 900px 700px at 50% 38%, #b9c7d8 0%, #8fa4bd 22%, #5f7996 46%, #43597a 68%, #33455f 100%);
-  }
 </style>
 </head>
 <body class="bg-white text-[#1d1d1f]">
 
-<!-- HERO -->
-<section class="hero-bg pt-14 pb-16 text-center">
-  <h1 class="mt-6 text-4xl md:text-5xl font-semibold text-white tracking-tight">Pool Table</h1>
-  <p class="mt-3 text-lg text-white/90">Pool table design made from aluminum and maple.</p>
+<!-- HERO IMAGE (placeholder) -->
+<div class="w-full aspect-[21/9] bg-[#d5d5d8] flex items-center justify-center">
+  <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+</div>
+
+<!-- HERO TEXT -->
+<section class="bg-white pt-10 pb-16 px-8 text-center">
+  <p class="text-sm font-medium text-[#6e6e73]">Pool Table</p>
+  <h1 class="mt-1 text-4xl md:text-6xl font-semibold tracking-tight">A machined desk table.</h1>
+  <p class="mt-4 text-lg text-[#1d1d1f]/80">Pool table design made from aluminum and maple.</p>
+  <div class="mt-6 flex justify-center gap-3">
+    <a href="https://www.etsy.com/listing/4550748187/mini-billiards-table-machined-desk" target="_blank" rel="noopener noreferrer" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Buy on Etsy</a>
+    <a href="index.html" class="border border-[#1d1d1f]/20 text-[#1d1d1f] text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
+  </div>
 </section>
 
-<!-- OVERVIEW -->
-<section class="bg-white py-16 px-8 md:px-16">
-  <div class="flex flex-col md:flex-row items-center gap-10 w-full">
-    <div class="w-full md:w-1/2 aspect-[4/3] rounded-2xl bg-[#f5f5f7] overflow-hidden">
-      <img src="images/Pool%20Table.png" alt="Pool table render" class="w-full h-full object-contain">
-    </div>
-    <div class="w-full md:w-1/2 text-left">
-      <h2 class="text-4xl font-semibold tracking-tight">A machined desk table.</h2>
-      <p class="mt-4 text-lg text-[#1d1d1f]/80">A miniature pool table CNC-machined from aluminum, with a hand-finished maple base. From sketch and CAD to the finished piece &mdash; this is the build.</p>
-      <div class="mt-6 flex gap-3">
-        <a href="https://www.etsy.com/listing/4550748187/mini-billiards-table-machined-desk" target="_blank" rel="noopener noreferrer" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Buy on Etsy</a>
-        <a href="index.html" class="border border-[#1d1d1f]/20 text-[#1d1d1f] text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
+<!-- FEATURE HIGHLIGHTS -->
+<section class="bg-white py-16 px-8 md:px-16 text-center">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">There's never been a better time to see it up close.</h2>
+  <p class="mt-3 text-[#6e6e73]">Here's what makes this build stand out.</p>
+
+  <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
       </div>
+      <p class="mt-4 font-semibold text-lg">CNC-machined aluminum surface</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Precision-cut for a smooth, level playing field.</p>
+    </div>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Hand-finished maple base</p>
+      <p class="mt-1 text-[#1d1d1f]/70">A warm, natural wood grain finish.</p>
+    </div>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Precision-drilled pockets</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Six pockets, machined to spec.</p>
+    </div>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Desk-sized scale</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Compact enough for any desk or shelf.</p>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- HIGHLIGHTS PANEL (placeholder) -->
 <section class="bg-[#f5f5f7] py-16 px-8 md:px-16">
-  <h2 class="text-4xl font-semibold tracking-tight text-center">The Build</h2>
-  <div class="mt-12 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-    <img src="images/pool-table-gallery/01.jpg" alt="Pool table design sketch" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/02.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/03.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/04.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/05.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/06.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/07.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/08.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/09.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/10.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/11.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/12.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/13.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/14.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
-    <img src="images/pool-table-gallery/15.jpg" alt="Pool table build photo" class="w-full aspect-square object-cover rounded-lg">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center">Get the highlights.</h2>
+  <div class="mt-10 max-w-4xl mx-auto aspect-video bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
+    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+  </div>
+  <div class="mt-4 flex justify-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-[#0071e3]"></span>
+    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
+    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
   </div>
 </section>
 
-<div class="bg-white py-12 text-center">
+<!-- CLOSER LOOK (placeholder) -->
+<section class="bg-white py-16 px-8 md:px-16 text-center">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Take a closer look.</h2>
+  <div class="mt-10 max-w-5xl mx-auto aspect-[16/9] bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
+    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+  </div>
+</section>
+
+<div class="bg-[#f5f5f7] py-12 text-center">
   <a href="index.html" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
 </div>
 

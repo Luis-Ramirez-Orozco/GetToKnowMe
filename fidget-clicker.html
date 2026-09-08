@@ -7,92 +7,85 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif; }
-  .hero-bg {
-    background: radial-gradient(ellipse 900px 700px at 50% 38%, #b9c7d8 0%, #8fa4bd 22%, #5f7996 46%, #43597a 68%, #33455f 100%);
-  }
 </style>
 </head>
 <body class="bg-white text-[#1d1d1f]">
 
-<!-- HERO -->
-<section class="hero-bg pt-14 pb-16 text-center">
-  <h1 class="mt-6 text-4xl md:text-5xl font-semibold text-white tracking-tight">Fidget Clicker</h1>
-  <p class="mt-3 text-lg text-white/90">A fidget toy, design journey.</p>
+<!-- HERO IMAGE (placeholder) -->
+<div class="w-full aspect-[21/9] bg-[#e8f0fb] flex items-center justify-center">
+  <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+</div>
+
+<!-- HERO TEXT -->
+<section class="bg-white pt-10 pb-16 px-8 text-center">
+  <p class="text-sm font-medium text-[#6e6e73]">Fidget Clicker</p>
+  <h1 class="mt-1 text-4xl md:text-6xl font-semibold tracking-tight">A tiny, satisfying click.</h1>
+  <p class="mt-4 text-lg text-[#1d1d1f]/80">A fidget toy, design journey.</p>
+  <div class="mt-6 flex justify-center gap-3">
+    <a href="https://www.etsy.com/listing/4518203256/neked-mechanical-clicker" target="_blank" rel="noopener noreferrer" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Buy on Etsy</a>
+    <a href="index.html" class="border border-[#1d1d1f]/20 text-[#1d1d1f] text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
+  </div>
 </section>
 
-<!-- OVERVIEW -->
-<section class="bg-white py-16 px-8 md:px-16">
-  <div class="flex flex-col md:flex-row items-center gap-10 w-full">
-    <div class="w-full md:w-1/2 aspect-[4/3] rounded-2xl bg-[#e8f0fb] overflow-hidden">
-      <img src="images/Fidget%20Clicker.png" alt="Fidget clicker render" class="w-full h-full object-cover object-center scale-[2.15] translate-x-[15%] -translate-y-[20%]">
-    </div>
-    <div class="w-full md:w-1/2 text-left">
-      <h2 class="text-4xl font-semibold tracking-tight">A tiny, satisfying click.</h2>
-      <p class="mt-4 text-lg text-[#1d1d1f]/80">A mechanical keyboard-switch fidget toy, from early sketches and prototypes through CNC setup and testing to the finished clicker.</p>
-      <div class="mt-6 flex gap-3">
-        <a href="https://www.etsy.com/listing/4518203256/neked-mechanical-clicker" target="_blank" rel="noopener noreferrer" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Buy on Etsy</a>
-        <a href="index.html" class="border border-[#1d1d1f]/20 text-[#1d1d1f] text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
+<!-- FEATURE HIGHLIGHTS -->
+<section class="bg-white py-16 px-8 md:px-16 text-center">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">There's never been a better time to see it up close.</h2>
+  <p class="mt-3 text-[#6e6e73]">Here's what makes this build stand out.</p>
+
+  <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
       </div>
+      <p class="mt-4 font-semibold text-lg">CNC-machined switch housing</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Built around a real mechanical keyboard switch.</p>
+    </div>
+    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Satisfying tactile click</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Every press feels precise.</p>
+    </div>
+    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Solid wood base</p>
+      <p class="mt-1 text-[#1d1d1f]/70">A stable, weighted foundation.</p>
+    </div>
+    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
+      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
+        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+      </div>
+      <p class="mt-4 font-semibold text-lg">Compact desktop size</p>
+      <p class="mt-1 text-[#1d1d1f]/70">Small enough to fit in one hand.</p>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- HIGHLIGHTS PANEL (placeholder) -->
 <section class="bg-[#e8f0fb] py-16 px-8 md:px-16">
-  <h2 class="text-4xl font-semibold tracking-tight text-center">The Design Journey</h2>
-  <div class="mt-12 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
-    <figure>
-      <img src="images/fidget-clicker-gallery/concept.jpg" alt="Concept sketch" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Concept</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/concept-2.jpg" alt="Concept sketch, second pass" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Concept, Round 2</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/v1.jpg" alt="First version" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">V1</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/prototype-1.jpg" alt="First prototype" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Prototype 1</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/v3.jpg" alt="Third version" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">V3</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/tape-method.jpg" alt="Tape method test" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Tape Method</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/speeds-doc-test.jpg" alt="Speeds and depth of cut test" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Speeds &amp; DOC Test</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/speeds-doc-test-2.jpg" alt="Speeds and depth of cut test, second round" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Speeds &amp; DOC Test, Round 2</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/gantry-vibration.jpg" alt="Gantry vibration diagnosis" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Gantry Vibration</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/cnc-setup.jpg" alt="CNC setup" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">CNC Setup</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/clicker.jpg" alt="Assembled clicker" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Assembled Clicker</figcaption>
-    </figure>
-    <figure>
-      <img src="images/fidget-clicker-gallery/final.jpg" alt="Final fidget clicker" class="w-full aspect-square object-cover rounded-lg">
-      <figcaption class="mt-2 text-sm text-[#1d1d1f]/70 text-center">Final</figcaption>
-    </figure>
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center">Get the highlights.</h2>
+  <div class="mt-10 max-w-4xl mx-auto aspect-video bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
+    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+  </div>
+  <div class="mt-4 flex justify-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-[#0071e3]"></span>
+    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
+    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
   </div>
 </section>
 
-<div class="bg-white py-12 text-center">
+<!-- CLOSER LOOK (placeholder) -->
+<section class="bg-white py-16 px-8 md:px-16 text-center">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Take a closer look.</h2>
+  <div class="mt-10 max-w-5xl mx-auto aspect-[16/9] bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
+    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+  </div>
+</section>
+
+<div class="bg-[#e8f0fb] py-12 text-center">
   <a href="index.html" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
 </div>
 
