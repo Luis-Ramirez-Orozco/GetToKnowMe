@@ -5,15 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fidget Clicker &middot; Luis Ramirez Orozco</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, Arial, sans-serif; }
+  .font-journal { font-family: "Lora", Georgia, serif; }
 </style>
 </head>
 <body class="bg-white text-[#1d1d1f]">
 
-<!-- HERO IMAGE (placeholder) -->
-<div class="w-full aspect-[21/9] bg-[#e8f0fb] flex items-center justify-center">
-  <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+<!-- HERO IMAGE -->
+<div class="w-full aspect-[21/9] bg-[#d5d5d8] overflow-hidden">
+  <img src="images/fidget-clicker-hero.jpg" alt="Two finished wooden fidget clickers with mechanical keyboard switches" class="w-full h-full object-cover object-center">
 </div>
 
 <!-- HERO TEXT -->
@@ -33,59 +37,117 @@
   <p class="mt-3 text-[#6e6e73]">Here's what makes this build stand out.</p>
 
   <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
-      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
-        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-      </div>
-      <p class="mt-4 font-semibold text-lg">CNC-machined switch housing</p>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <p class="font-semibold text-lg">CNC-machined switch housing</p>
       <p class="mt-1 text-[#1d1d1f]/70">Built around a real mechanical keyboard switch.</p>
     </div>
-    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
-      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
-        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-      </div>
-      <p class="mt-4 font-semibold text-lg">Satisfying tactile click</p>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <p class="font-semibold text-lg">Satisfying tactile click</p>
       <p class="mt-1 text-[#1d1d1f]/70">Every press feels precise.</p>
     </div>
-    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
-      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
-        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-      </div>
-      <p class="mt-4 font-semibold text-lg">Solid wood base</p>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <p class="font-semibold text-lg">Solid wood base</p>
       <p class="mt-1 text-[#1d1d1f]/70">A stable, weighted foundation.</p>
     </div>
-    <div class="bg-[#e8f0fb] rounded-2xl p-8 text-left">
-      <div class="w-10 h-10 rounded-lg bg-[#d5d5d8] flex items-center justify-center">
-        <svg class="w-5 h-5 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-      </div>
-      <p class="mt-4 font-semibold text-lg">Compact desktop size</p>
+    <div class="bg-[#f5f5f7] rounded-2xl p-8 text-left">
+      <p class="font-semibold text-lg">Compact desktop size</p>
       <p class="mt-1 text-[#1d1d1f]/70">Small enough to fit in one hand.</p>
     </div>
   </div>
 </section>
 
-<!-- HIGHLIGHTS PANEL (placeholder) -->
-<section class="bg-[#e8f0fb] py-16 px-8 md:px-16">
+<!-- HIGHLIGHTS -->
+<section class="bg-[#f5f5f7] py-16 px-8 md:px-16">
   <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center">Get the highlights.</h2>
-  <div class="mt-10 max-w-4xl mx-auto aspect-video bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
-    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-  </div>
-  <div class="mt-4 flex justify-center gap-2">
-    <span class="w-2 h-2 rounded-full bg-[#0071e3]"></span>
-    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
-    <span class="w-2 h-2 rounded-full bg-[#d2d2d7]"></span>
+  <p class="mt-3 text-center text-[#6e6e73]">Scroll to see more from the build.</p>
+  <div class="mt-10 max-w-5xl mx-auto flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 [-webkit-overflow-scrolling:touch]">
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-highlights/01.jpg" alt="CNC build hardware: linear rails, lead screws, and stepper motors" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">It started with sourcing the hardware to build my own CNC router: linear rails, lead screws, and NEMA stepper motors.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-highlights/02.jpg" alt="The assembled CNC router next to a laptop, ready to run" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Once assembled, the machine was ready to cut its first test pieces.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/03.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Before any machining, the raw stock gets jointed and planed flat and square.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-highlights/04.jpg" alt="Hand holding a poplar test board marked with feed and speed values" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Dialing in feeds and speeds on poplar test boards before committing to good stock.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/05.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Cutting a row of test slots to compare finish quality across different settings.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/06.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Roughing out the switch-housing pockets for a batch of five bodies at once.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/07.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">A closer look at the roughing pass, clearing out the bulk of the pocket material.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/08.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">The finishing pass leaves clean, square pocket walls ready for the switches.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/09.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Switching to a second CNC to cut a wider batch of bodies.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/10.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Fixturing a single body for a final profiling pass.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-highlights/11.jpg" alt="A glued-up laminated wood blank" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">A glued-up laminated blank, ready to be milled down to its final shape.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-highlights/12.jpg" alt="A bag of finished wooden clicker bodies" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">A finished batch of bodies, bagged up and ready for finishing.</p>
+    </div>
+    <div class="snap-center shrink-0 w-full md:w-[75%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><video src="images/fidget-clicker-highlights/13.mp4" controls playsinline preload="metadata" class="w-full h-full object-contain"></video></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Hand-applying wood stain to bring out the grain before final assembly.</p>
+    </div>
   </div>
 </section>
 
-<!-- CLOSER LOOK (placeholder) -->
-<section class="bg-white py-16 px-8 md:px-16 text-center">
+<!-- DRAWINGS -->
+<section class="bg-white py-16 px-8 md:px-16">
+  <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center">The drawings.</h2>
+  <p class="mt-3 text-center text-[#6e6e73]">Scroll through the design notes.</p>
+  <div class="mt-10 max-w-6xl mx-auto flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 [-webkit-overflow-scrolling:touch]">
+    <div class="snap-center shrink-0 w-full md:w-[85%]">
+      <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-[#f5f5f7]"><img src="images/fidget-clicker-drawings/sh1.jpg" alt="Hand-drawn design sketch of the clicker body with dimensions" class="w-full h-full object-contain"></div>
+      <p class="mt-3 text-center text-[#1d1d1f]/70">Early sketches working out the switch pocket, keycap clearance, and base dimensions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section class="bg-white py-20 px-8 md:px-16">
+  <div class="max-w-2xl mx-auto text-left">
+    <p class="text-sm font-medium text-[#0071e3]">Reflections</p>
+    <h2 class="mt-1 text-3xl md:text-4xl font-semibold tracking-tight">What I learned.</h2>
+    <p class="font-journal italic mt-6 text-xl leading-relaxed text-[#1d1d1f]/80">
+      Building the machine before I could build the product taught me more than the clicker itself. Every dimension in the sketches had to survive contact with real feeds-and-speeds tests, and a lot of them didn't. Running a second CNC in parallel and switching between roughing and finishing passes forced me to think about the process as a whole, not just the final part. Small things, like how a pocket is roughed before it's finished, ended up mattering as much as the design itself.
+    </p>
+  </div>
+</section>
+
+<!-- CLOSER LOOK -->
+<section class="bg-[#f5f5f7] py-16 px-8 md:px-16 text-center">
   <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Take a closer look.</h2>
-  <div class="mt-10 max-w-5xl mx-auto aspect-[16/9] bg-[#d5d5d8] rounded-2xl flex items-center justify-center">
-    <svg class="w-16 h-16 text-[#1d1d1f]/30" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+  <div class="mt-10 max-w-3xl mx-auto">
+    <div class="aspect-[3/2] rounded-2xl overflow-hidden bg-white"><img src="images/fidget-clicker-closer.jpg" alt="Finished clicker engraved with the Century Spring logo, with a set of keycaps" class="w-full h-full object-contain"></div>
   </div>
 </section>
 
-<div class="bg-[#e8f0fb] py-12 text-center">
+<div class="bg-[#f5f5f7] py-12 text-center">
   <a href="index.html" class="bg-[#0071e3] text-white text-sm font-medium px-5 py-2 rounded-full">Back to home</a>
 </div>
 
